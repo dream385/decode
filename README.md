@@ -5,9 +5,6 @@ python脚本同理 放入到input.py里面 等待60s左右即可在output.py看�
 
 目前支持zlib bz2 lzma
 
-没有自动解密的自行设置下settings(仓库上面)-actions（左边）-general（左边）-Actions permissions选第4个（
-Allow XXXX, and select non-XXXX, actions and reusable workflows）然后下面2个打勾(Allow actions created by GitHub,Allow actions by Marketplace verified creators)☑️最后按save保存结束
-
 脚本自适应检测加密方式
 
 支持sojson [源jsjiami.v6]
