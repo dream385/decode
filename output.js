@@ -1,4 +1,4 @@
-//Fri Jun 28 2024 12:18:41 GMT+0000 (Coordinated Universal Time)
+//Fri Jun 28 2024 12:22:23 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 //待解码脚本
