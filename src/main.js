@@ -56,10 +56,13 @@ for (let plugin of plugins) {
     continue;
   }
 }
-let time = time().tz('Asia/Shanghai');
+let moment = require('moment-timezone');
+let current_time = moment().tz('Asia/Shanghai');
+console.log("当前北京时间:", current_time.format());
+
 if (processedCode !== sourceCode) {
   // 输出代码
-  fs.writeFile(decodeFile, "//" + time + '\n' + "//Base:https://github.com/echo094/decode-js" + '\n' + "//Modify:https://github.com/dream385/decode" + '\n' + processedCode, (err) => {
+  fs.writeFile(decodeFile, "//" + moment + '\n' + "//Base:https://github.com/echo094/decode-js" + '\n' + "//Modify:https://github.com/dream385/decode" + '\n' + processedCode, (err) => {
     if (err) throw err;
     console.log(`使用插件 ${pluginUsed} 成功处理并写入文件 ${decodeFile}`);
   });
