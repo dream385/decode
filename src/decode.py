@@ -23,8 +23,6 @@ beijing_time_str = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
 print("当前北京时间：", beijing_time_str)
 
 
-# 将日期和时间格式化为字符串
-formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def try_decompress(data):
