@@ -8,8 +8,6 @@ from datetime import datetime
 #from cryptography.fernet import Fernet
 #from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
-import pytz
-from datetime import datetime
 
 # 设置时区为Asia/Shanghai（北京时间）
 beijing_tz = pytz.timezone('Asia/Shanghai')
@@ -20,7 +18,7 @@ beijing_time = datetime.now(beijing_tz)
 # 格式化输出北京时间
 beijing_time_str = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
 
-print("当前北京时间：", beijing_time_str)
+
 
 
 
