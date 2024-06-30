@@ -8,10 +8,16 @@ from datetime import datetime
 #from cryptography.fernet import Fernet
 #from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
-now = pytz.timezone('Asia/Shanghai')
-now = datetime.now(now)
 
 
+from datetime import datetime
+import pytz
+
+# 创建北京时区对象
+beijing_tz = pytz.timezone('Asia/Shanghai')
+
+# 获取当前北京时间
+now = datetime.now(beijing_tz)
 
 
 # 将日期和时间格式化为字符串
