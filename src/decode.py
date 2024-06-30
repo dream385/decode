@@ -8,19 +8,12 @@ from datetime import datetime
 #from cryptography.fernet import Fernet
 #from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
-
 # 设置时区为Asia/Shanghai（北京时间）
 beijing_tz = pytz.timezone('Asia/Shanghai')
+now = datetime.now(beijing_tz)
 
-# 获取当前时间并应用北京时区
-beijing_time = datetime.now(beijing_tz)
-
-# 格式化输出北京时间
-beijing_time_str = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
-
-
-
-
+# 将日期和时间格式化为字符串
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def try_decompress(data):
