@@ -8,7 +8,7 @@ from datetime import datetime
 #from cryptography.fernet import Fernet
 #from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
-now = datetime.now()
+now = datetime.now().toLocaleString('en-US', {timeZone: 'Asia/Shanghai'});
 
 # 将日期和时间格式化为字符串
 formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
