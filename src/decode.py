@@ -8,9 +8,7 @@ from datetime import datetime
 #from cryptography.fernet import Fernet
 #from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
-# 设置时区为Asia/Shanghai（北京时间）
-beijing_tz = pytz.timezone('Asia/Shanghai')
-now = datetime.now(beijing_tz)
+now = datetime.now().pytz.timezone('Asia/Shanghai')
 
 # 将日期和时间格式化为字符串
 formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
