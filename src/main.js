@@ -56,7 +56,7 @@ for (let plugin of plugins) {
     continue;
   }
 }
-let time = new Date('Asia/Shanghai');
+let time = moment().tz('Asia/Shanghai');
 if (processedCode !== sourceCode) {
   // 输出代码
   fs.writeFile(decodeFile, "//" + time + '\n' + "//Base:https://github.com/echo094/decode-js" + '\n' + "//Modify:https://github.com/dream385/decode" + '\n' + processedCode, (err) => {
