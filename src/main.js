@@ -56,7 +56,7 @@ for (let plugin of plugins) {
     continue;
   }
 }
-let time = new Date();
+let time = new Date().toLocaleString('en-US', {timeZone: 'Asia/Shanghai'});
 if (processedCode !== sourceCode) {
   // 输出代码
   fs.writeFile(decodeFile, "//" + time + '\n' + "//Project:https://github.com/dream385/decode" + '\n' + processedCode, (err) => {
