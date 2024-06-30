@@ -1,6 +1,5 @@
-//Sun Jun 30 2024 01:51:31 GMT+0000 (Coordinated Universal Time)
-//Base:https://github.com/echo094/decode-js
-//Modify:https://github.com/dream385/decode
+//Sun Jun 30 2024 01:55:23 GMT+0000 (Coordinated Universal Time)
+//Project:https://github.com/dream385/decode
 const _0x1b79bf = new _0x4ee126("腾讯视频-福利中心");
 let _0x5e79bc = ["\n", "@", "&"],
   _0x150e6d,
